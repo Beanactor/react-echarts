@@ -1,0 +1,307 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.App {
+	width: 100vw;
+	height: 100vh;
+	border: 1px solid #000;
+	text-align: center;
+	/*background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);*/
+	background: url(../../assets/imgs/app_bg.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+canvas {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.header {
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	height: 10vh;
+	overflow: hidden;
+}
+
+.leftUlBox {
+	width: 30%;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+	padding: 0.5rem 0;
+}
+
+.rightUlBox {
+	width: 30%;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+	padding: 0.5rem 0;
+}
+
+.leftUl {
+	width: 60%;
+	margin: 0 auto;
+	height: 100%;
+	font-size: 0.5rem;
+	overflow: hidden;
+	border-radius: 5px;
+	box-shadow: 0 0 3px #ddd;
+	display: flex;
+}
+
+.leftUl li {
+	background: rgba(39, 86, 202, 0.5);
+	flex: 1;
+	height: 100%;
+	float: left;
+	text-align: center;
+	overflow: hidden;
+	border-left: 1px #000 solid;
+}
+
+.leftUl li:first-child {
+	border: none;
+}
+
+.leftUl li p:first-child {
+	border: none;
+}
+
+.leftUl li p {
+	height: 50%;
+	line-height: 250%;
+}
+
+.leftUl li p:nth-child(2) {
+	font-weight: bold;
+	color: #fffe00;
+	font-size: 1.5rem;
+	line-height: 100%;
+}
+
+.rightUl {
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+	height: 100%;
+	font-size: 0.5rem;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.rightUl li {
+	background: rgba(39, 86, 202, 0.5);
+	width: calc(100% / 2);
+	height: 100%;
+	float: left;
+	text-align: center;
+	overflow: hidden;
+	border-left: 1px #000 solid;
+}
+
+.rightUl li:first-child {
+	border: none;
+}
+
+.rightUl li p:first-child {
+	border: none;
+}
+
+.rightUl li p {
+	height: 50%;
+	line-height: 250%;
+}
+
+.rightUl li p:nth-child(2) {
+	font-weight: bold;
+	color: #fffe00;
+	font-size: 1.5rem;
+	line-height: 100%;
+}
+
+.log {
+	float: left;
+	width: 40%;
+	height: 10vh;
+	text-align: center;
+	color: #075798;
+	text-shadow: 5px 2px 6px #000;
+	font-weight: bold;
+	font-size: 1.8rem;
+}
+
+.log>p:nth-of-type(1) {
+	font-weight: inherit;
+	line-height: 5vh;
+}
+
+.log>p:nth-of-type(2) {
+	font-weight: inherit;
+	line-height: 5vh;
+}
+
+.FactoryList {
+	width: 100%;
+	height: 40vh;
+	float: left;
+}
+
+/* .FactoryList ul li {
+	border: 1px solid #000;
+	padding: 20px;
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+} */
+
+.resumeNum {
+	width: 100%;
+	height: 45vh;
+	float: left;
+}
+.main {
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	float: left;
+}
+
+.leftWrap,
+.rightWrap {
+	width: 100%;
+	height: 100%;
+	padding: .5rem;
+	float: left;
+}
+
+.user-gender,
+.factory-Ranking {
+	width: 100%;
+	height: 55%;
+	
+}
+
+.factory-Ranking {
+	padding: 0px 20px 20px 20px;
+	/*overflow: auto;*/
+}
+
+.user-age,
+.usertype-source {
+	width: 100%;
+	height: 45%;
+	
+}
+
+.usertype-source {
+	padding: 10px;
+}
+
+.chart-age,
+.chart-gender,
+.chart-apply,
+.chart-userSource,
+.chart-factocy {
+	width: 100%;
+	height: 100%;
+}
+
+.chart-age {
+	padding: 20px;
+}
+
+.chart-gender {
+	padding-top: 50px;
+}
+
+.chart-factocy::-webkit-scrollbar {
+	width: 8px;
+}
+
+.chart-factocy::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px #eee;
+	border-radius: 10px;
+}
+
+.chart-factocy::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	box-shadow: inset 0 0 6px #eee;
+}
+
+.chart-factocy li {
+	width: 100%;
+	padding: 20px 0;
+	font-size: 18px;
+	margin-bottom: 20px;
+	border: 1px solid #08f;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.chart-factocy li:hover {
+	box-shadow: 0 0 8px #08f;
+	border: none;
+}
+
+.centerWrap {
+	width: 50%;
+	height: 100%;
+	position: relative;
+}
+
+.checkoutMap {
+	z-index: 9999;
+	position: absolute;
+	top: 50px;
+	left: 0;
+}
+
+.factory-map,
+.user-source {
+	width: 50vw;
+	height: 60vh;
+	/*border: 1px solid #0f0;*/
+}
+
+.user-source:hover,
+.factory-map:hover {
+	box-shadow: 0 0 15px inset #eee;
+	border-radius: 15px;
+}
+
+.apply-trend {
+	width: 100%;
+	height: 30vh;
+	padding: .5rem;
+	/*border: 1px solid #00f;*/
+}
+
+button {
+	outline: none;
+	border: none;
+	padding: 8px;
+	/*margin: 5px;*/
+	border: 1px solid #eee;
+	border-radius: 5px;
+	background: rgba(0, 0, 0, .08);
+	color: #fff;
+}
+
+button:active,
+ol li:active {
+	background: rgba(0, 0, 0, .2);
+}
+
+ol li {
+	list-style: none;
+	width: 100%;
+	background-color: #08f;
+	padding: 10px;
+	margin: 5px;
+}

@@ -1,0 +1,109 @@
+	#login {
+		overflow: hidden;
+	}
+	/* iconfont */
+	@font-face {
+		font-family: 'iconfont';  /* project id 371858 */
+		src: url('//at.alicdn.com/t/font_371858_x0krx4hj0ct.eot');
+		src: url('//at.alicdn.com/t/font_371858_x0krx4hj0ct.eot?#iefix') format('embedded-opentype'),
+		url('//at.alicdn.com/t/font_371858_x0krx4hj0ct.woff2') format('woff2'),
+		url('//at.alicdn.com/t/font_371858_x0krx4hj0ct.woff') format('woff'),
+		url('//at.alicdn.com/t/font_371858_x0krx4hj0ct.ttf') format('truetype'),
+		url('//at.alicdn.com/t/font_371858_x0krx4hj0ct.svg#iconfont') format('svg');
+	  }
+	  .test-enter{
+		transform: translateX(-200px);
+		opacity: 0.01;
+	  }
+	  .test-enter.test-enter-active {
+		transform: translateX(0);
+		opacity: 1;
+		transition: all 500ms ease-in-out;
+	  }
+	  .test-leave {
+		transform: translateX(0);
+		opacity: 1;
+	  }
+	  .test-leave.test-leave-active {
+		transition: all 500ms ease-in;
+		opacity: 0;
+		transform: translateX(300px);
+	  }
+	  .iconfont{
+		font-family:"iconfont" !important;
+		font-size:16px;font-style:normal;
+		-webkit-font-smoothing: antialiased;
+		-webkit-text-stroke-width: 0.2px;
+		-moz-osx-font-smoothing: grayscale;}
+		.login .icon_index {
+			font-size: 50px;
+		  }
+	#login img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	
+	.login {
+		position: relative;
+		background: rgba(0, 0, 0, 0.3);
+		z-index: 10;
+		width: 24rem;
+		margin: 10% auto;
+		padding: 0.8rem;
+		border-radius: 5px;
+		box-shadow: 0 0 5px #ddd;
+	}
+	
+	.login input {
+		background: rgba(0, 0, 0, 0);
+		color: #fff;
+		padding: 0.8rem;
+		padding-bottom: 0.5rem;
+		display: block;
+		width: 100%;
+		position: relative;
+		border: none;
+		border: 1px #065591 solid;
+		border-radius: 5px;
+	}
+	
+	.loginbtn {
+		position: relative;
+		border: none;
+		display: block;
+		padding: 0.5rem 0.8rem;
+		width: 100%;
+		margin-top: 20px;
+		background: #0000FF;
+		text-align: center;
+		color: #fff;
+		border-radius: 5px;
+		background: #075798;
+	}
+	
+	.loginbtn:active {
+		background: #042648;
+		border: none;
+	}
+	
+	.loginbtn:focus {
+		outline: 0;
+	}
+	
+	.title {
+		padding-top: 3em;
+	}
+	
+	.title p {
+		position: relative;
+		z-index: 100;
+		text-align: center;
+		color: #075798;
+		font-size: 3rem;
+		padding-top: 1em;
+		font-weight: bold;
+		text-shadow: 5px 2px 6px #000;
+	}
